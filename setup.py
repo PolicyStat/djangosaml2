@@ -30,7 +30,7 @@ if sys.version_info < (3, 4):
 
 
 setup(
-    name='djangosaml2_v0181',
+    name='djangosaml2',
     version='0.18.1',
     description='pysaml2 integration for Django',
     long_description=read('README.rst'),
@@ -68,7 +68,10 @@ setup(
     url="https://github.com/knaperek/djangosaml2",
     download_url="https://pypi.org/project/djangosaml2/",
     license='Apache 2.0',
-    packages=find_packages(exclude=["tests", "tests.*"]),
+    packages=['djangosaml2_v0181'],
+    package_dir=dict(
+        djangosaml2_v0181='djangosaml2',
+    ),
     include_package_data=True,
     zip_safe=False,
     install_requires=[
