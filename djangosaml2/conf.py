@@ -21,7 +21,7 @@ from django.core.exceptions import ImproperlyConfigured
 
 from saml2.config import SPConfig
 
-from djangosaml2.utils import get_custom_setting
+from djangosaml2_v0181.utils import get_custom_setting
 
 
 def get_config_loader(path, request=None):

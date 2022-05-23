@@ -14,7 +14,7 @@
 # limitations under the License.
 
 from django.conf.urls import url
-from djangosaml2 import views
+from djangosaml2_v0181 import views
 
 
 urlpatterns = [

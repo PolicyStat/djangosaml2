@@ -43,13 +43,13 @@ except ImportError:
 from saml2.config import SPConfig
 from saml2.s_utils import decode_base64_and_inflate, deflate_and_base64_encode
 
-from djangosaml2 import views
-from djangosaml2.cache import OutstandingQueriesCache
-from djangosaml2.conf import get_config
-from djangosaml2.tests import conf
-from djangosaml2.tests.auth_response import auth_response
-from djangosaml2.signals import post_authenticated
-from djangosaml2.views import finish_logout
+from djangosaml2_v0181 import views
+from djangosaml2_v0181.cache import OutstandingQueriesCache
+from djangosaml2_v0181.conf import get_config
+from djangosaml2_v0181.tests import conf
+from djangosaml2_v0181.tests.auth_response import auth_response
+from djangosaml2_v0181.signals import post_authenticated
+from djangosaml2_v0181.views import finish_logout
 
 User = get_user_model()
 

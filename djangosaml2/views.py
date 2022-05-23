@@ -55,13 +55,13 @@ from saml2.response import (
 from saml2.validate import ResponseLifetimeExceed, ToEarly
 from saml2.xmldsig import SIG_RSA_SHA1, SIG_RSA_SHA256  # support for SHA1 is required by spec
 
-from djangosaml2.cache import IdentityCache, OutstandingQueriesCache
-from djangosaml2.cache import StateCache
-from djangosaml2.exceptions import IdPConfigurationMissing
-from djangosaml2.conf import get_config
-from djangosaml2.overrides import Saml2Client
-from djangosaml2.signals import post_authenticated
-from djangosaml2.utils import (
+from djangosaml2_v0181.cache import IdentityCache, OutstandingQueriesCache
+from djangosaml2_v0181.cache import StateCache
+from djangosaml2_v0181.exceptions import IdPConfigurationMissing
+from djangosaml2_v0181.conf import get_config
+from djangosaml2_v0181.overrides import Saml2Client
+from djangosaml2_v0181.signals import post_authenticated
+from djangosaml2_v0181.utils import (
     available_idps, fail_acs_response, get_custom_setting,
     get_idp_sso_supported_bindings, get_location, is_safe_url_compat,
 )
