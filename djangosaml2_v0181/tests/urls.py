@@ -15,7 +15,7 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from djangosaml2 import views
+from djangosaml2_v0181 import views
 
 
 urlpatterns = [
